@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>OPH · Objetivos, Preguntas e Hipótesis · Escuela de Administración · UNASAM</title>
+<style>
+#mc{--bg:#f2f5f8;--sf:#fff;--ink:#1c2433;--mu:#5b6578;--ln:#d5dbe3;--ac:#1b5e7a;--ac-h:#144960;--ac-l:#e8f1f5;font:15px/1.55 system-ui,"Segoe UI",Arial,sans-serif;color:var(--ink);background:var(--bg);padding:20px;max-width:1280px;margin:auto}
+#mc *{box-sizing:border-box}
+#mc .top-hdr{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:flex-end;gap:12px;margin-bottom:14px}
+#mc h1{font:600 clamp(24px,4vw,34px)/1.2 Georgia,serif;margin:0 0 6px}
+#mc h2{font:600 18px Georgia,serif;margin:16px 0 6px}
+#mc h2:first-child{margin-top:0}
+#mc .sub{color:var(--mu);margin:0;max-width:75ch}
+#mc .top-actions{display:flex;gap:8px}
+#mc .wrap{display:grid;grid-template-columns:minmax(310px,390px) 1fr;gap:20px;align-items:start}
+@media(max-width:900px){#mc .wrap{grid-template-columns:1fr}}@media(max-width:480px){#mc{padding:12px}#mc .g2{grid-template-columns:1fr}}
+#mc .box{background:var(--sf);border:1px solid var(--ln);border-radius:10px;padding:16px}
+#mc label{display:block;font-weight:600;font-size:13px;margin:10px 0 3px}
+#mc input,#mc select{width:100%;padding:8px 10px;border:1px solid var(--ln);border-radius:6px;background:#fff;color:var(--ink);font:inherit}
+#mc .g2{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+#mc .note{font-size:13px;color:var(--mu);background:var(--bg);border-left:3px solid var(--ac);padding:8px 10px;margin-top:8px;border-radius:0 6px 6px 0}
+#mc fieldset{border:1px solid var(--ln);border-radius:8px;margin:8px 0;padding:8px 10px}
+#mc legend{font-weight:600;font-size:13px;padding:0 6px;color:var(--ac)}
+#mc .dr{display:flex;gap:6px;margin-top:6px}
+#mc .dr button{width:34px;flex:none}
+#mc button{font:inherit;cursor:pointer;border:1px solid var(--ln);background:#fff;color:var(--ink);border-radius:6px;padding:7px 12px;transition:background .15s,border-color .15s}
+#mc button:hover{background:#f8fafc;border-color:#b8c2d0}
+#mc button.p{background:var(--ac);color:#fff;border-color:var(--ac);font-weight:600}
+#mc button.p:hover{background:var(--ac-h)}
+#mc button.s{font-size:13px;padding:4px 9px;color:var(--mu);margin:8px 6px 0 0}
+#mc .top-actions button.s{margin:0}
+#mc .chk{display:flex;gap:8px;font-weight:400;margin-top:10px}
+#mc .chk input{width:auto;margin-top:4px}
+#mc :focus-visible{outline:2px solid var(--ac);outline-offset:1px}
+#mc #warn div{padding:8px 12px;border-radius:6px;margin-bottom:6px;font-size:14px;background:#fff3d1;color:#7a4f00}
+#mc #warn div.e{background:#fde4e4;color:#9b1c1c}
+#mc .bar{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:8px;margin-bottom:12px;padding-bottom:10px;border-bottom:1px solid var(--ln)}
+#mc .bar-btns{display:flex;flex-wrap:wrap;gap:8px}
+#mc .badge{font-size:12px;font-weight:600;background:var(--ac-l);color:var(--ac);padding:4px 10px;border-radius:99px}
+#mc .empty{color:var(--mu);padding:36px 8px;text-align:center}
+#mc .tw{overflow-x:auto}
+#mc table{border-collapse:collapse;width:100%;min-width:720px}
+#mc th{font:600 16px Georgia,serif;text-align:left;padding:10px;border-bottom:2px solid var(--ac)}
+#mc td{vertical-align:top;padding:10px;border-bottom:1px solid var(--ln);width:33.3%}
+#mc tr.gen td{background:#e8f1f5}
+#mc .tag{font-size:12px;color:var(--mu);font-weight:600;margin-bottom:2px}
+#mc .txt{white-space:pre-wrap;border-radius:4px;padding:2px}
+#mc .txt:focus{background:#f2f5f8}
+#mc footer{margin-top:20px;font-size:13px;color:var(--mu);border-top:1px solid var(--ln);padding-top:12px}
+#mc footer ul{margin:4px 0 8px;padding-left:18px}
+#mc #toast{position:fixed;left:50%;bottom:20px;transform:translateX(-50%);background:var(--ink);color:#fff;padding:8px 16px;border-radius:6px;opacity:0;pointer-events:none;transition:opacity .2s;z-index:99}
+#mc #toast.on{opacity:1}
+#mc details{background:var(--sf);border:1px solid var(--ln);border-radius:10px;padding:10px 16px;margin-top:12px}#mc summary{cursor:pointer;font:600 17px Georgia,serif}#mc details p,#mc details li{margin:8px 0}#mc details h3{font:600 15px system-ui;margin:14px 0 2px;color:var(--ac)}@media print{#mc .box.f,#mc .bar,#mc .top-actions{display:none!important}#mc .wrap{display:block}}
+</style>
+</head>
+<body style="margin:0;background:#f2f5f8">
+<div id="mc">
+<div class="top-hdr">
+<div>
+<h1>Creadora de Objetivos, Preguntas e Hipótesis (Matriz OPH)</h1>
+<p class="sub">Escuela de Administración · UNASAM. Formula preguntas, objetivos e hipótesis a nivel descriptivo y correlacional, para estudios bivariados (2 variables) y multivariados (3 a 5), según el autor metodológico que elijas.</p>
+</div>
+<div class="top-actions">
+<button type="button" class="s" id="demo">Cargar ejemplo</button>
+<button type="button" class="s" id="clr">Limpiar</button>
+</div>
+</div>
+<div class="wrap">
+<section class="box f" aria-label="Datos de la investigación">
+<h2>Criterio metodológico</h2>
+<label for="au">Autor de referencia</label>
+<select id="au"><option value="hs">Hernández-Sampieri y Mendoza</option><option value="vara">Vara-Horna (7 pasos para una tesis exitosa)</option><option value="vi">Vara y Villanueva (Guía UNASAM)</option></select>
+<div class="note" id="an"></div>
+<div class="g2">
+<div><label for="al">Alcance</label><select id="al"><option value="c">Correlacional</option><option value="d">Descriptivo</option></select></div>
+<div><label for="hp">Hipótesis</label><select id="hp"><option value="b">Nula y alternativa (H0 y Hi)</option><option value="i">Solo alternativa (Hi)</option><option value="n">Solo nula (H0)</option></select></div>
+<div><label for="vb">Verbo del objetivo</label><select id="vb"><option>Determinar</option><option>Establecer</option><option>Analizar</option><option>Examinar</option><option>Evaluar</option><option>Verificar</option></select></div>
+<div><label for="cr">Específicos según</label><select id="cr"></select></div>
+</div>
+<label class="chk"><input type="checkbox" id="ds"><span>Incluir específicos descriptivos por variable (en alcance correlacional)</span></label>
+
+<h2>Datos de la investigación</h2>
+<label for="ti">Título tentativo</label><input id="ti" placeholder="Ej.: Relación entre liderazgo transformacional y desempeño laboral...">
+<label for="og">Organización o institución</label><input id="og" placeholder="Ej.: Municipalidad Provincial de Huaraz">
+<label for="em">Empresa (si corresponde)</label><input id="em">
+<label for="ar">Artículo de la organización</label><select id="ar"><option value="a">Automático</option><option value="el">el</option><option value="la">la</option><option value="los">los</option><option value="las">las</option><option value="-">Ninguno</option></select>
+<label for="po">Población de estudio</label><input id="po" placeholder="Ej.: los trabajadores administrativos">
+<div class="g2">
+<div><label for="lu">Lugar o ámbito</label><input id="lu" placeholder="Ej.: Huaraz"></div>
+<div><label for="an2">Año o periodo</label><input id="an2" maxlength="9" placeholder="2026 o 2025-2026"></div>
+</div>
+
+<h2>Variables y dimensiones</h2>
+<div id="vs"></div>
+<button type="button" class="s" id="addv">+ Agregar variable</button>
+<p style="margin-top:18px"><button type="button" class="p" id="go" style="width:100%;padding:10px">Generar matriz</button></p>
+</section>
+
+<section class="box" aria-live="polite">
+<div id="warn"></div>
+<div id="out"><div class="empty">Completa las variables y sus dimensiones, y pulsa «Generar matriz».</div></div>
+</section>
+</div>
+<details open><summary>Marco metodológico: definiciones ampliadas</summary>
+<h3>Pregunta de investigación (problema)</h3><p>Enunciado interrogativo que delimita lo que se quiere saber. Hernández-Sampieri y Mendoza (2018) la ubican dentro del planteamiento del problema cuantitativo: debe ser concreta, factible y susceptible de responderse con datos. La <b>pregunta general</b> abarca el fenómeno completo (variables, población, lugar y tiempo); las <b>preguntas específicas</b> la desglosan, normalmente una por dimensión, siguiendo el método estructural de Vara-Horna (2012). Debe mantener el mismo orden que los objetivos y las hipótesis.</p>
+<h3>Objetivo de investigación</h3><p>Propósito que orienta el estudio y se expresa con un verbo en infinitivo. El <b>objetivo general</b> responde a la pregunta general; los <b>específicos</b> son logros parciales, con un solo logro evaluable cada uno. Vara y Villanueva (guía UNASAM) exigen que sean medibles y restringen los verbos de intervención (mejorar, implementar, reducir) en estudios no experimentales, porque la investigación no controla esos resultados. Hernández-Sampieri y Mendoza (2018) advierten además que «medir» describe una acción de recolección de datos, no un propósito de investigación.</p>
+<h3>Hipótesis</h3><p>Explicación tentativa del fenómeno, formulada como afirmación contrastable. La <b>hipótesis alternativa (Hi)</b> afirma que existe relación significativa; la <b>nula (H0)</b> afirma que no existe. Según Hernández-Sampieri y Mendoza (2018), el alcance condiciona su formulación: en el descriptivo solo cuando se pronostica una cifra o un hecho; en el correlacional se plantean hipótesis correlacionales; en el explicativo, causales (bivariadas o multivariadas). Por eso esta herramienta no genera hipótesis en el alcance descriptivo. Supo y Zacarías (2020) y Bernal (2016) añaden que la hipótesis debe ser coherente con la prueba estadística prevista.</p>
+<h3>Alcance descriptivo y correlacional</h3><p><b>Descriptivo:</b> especifica propiedades, características y perfiles de la variable: cómo es y cómo se manifiesta. <b>Correlacional:</b> evalúa la relación entre dos o más variables en un contexto particular, sin atribuir causalidad. Si se pide causalidad, el alcance corresponde al explicativo (ver la herramienta «Tituladora»). Ñaupas et al. (2018), Carrasco (2019) y Arias (2012) coinciden en esta jerarquía, aunque usan denominaciones propias («nivel» o «tipo»); conviene respetar la del reglamento de tu facultad.</p>
+<h3>Diseños bivariado y multivariado</h3><p>Un diseño <b>bivariado</b> relaciona dos variables; uno <b>multivariado</b>, tres o más. En la matriz, la relación general abarca todas las variables y cada específico relaciona una dimensión con las demás variables. Vara-Horna (2012) recomienda desglosar por factor o dimensión (método estructural) y, si se desea, anteponer objetivos descriptivos (método secuencial). En diseños multivariados la técnica estadística (correlación múltiple, regresión) debe definirse con el asesor.</p>
+<h3>Correspondencia, operacionalización y validez lógica</h3><p>La <b>coherencia horizontal</b> exige que, en cada fila de la matriz de consistencia, la pregunta, el objetivo y la hipótesis traten las mismas variables y dimensiones. La <b>coherencia vertical</b> exige que los específicos desarrollen al general y que el título, el problema y la operacionalización usen los mismos términos. La <b>operacionalización</b> convierte cada variable en dimensiones e indicadores medibles con un instrumento (Carrasco, 2019; Ñaupas et al., 2018), y la <b>validez lógica</b> es la consistencia argumentativa de todo el sistema (Bernal, 2016). Vara y Villanueva exigen correspondencia estricta, en el mismo orden, entre problema, objetivo e hipótesis.</p>
+<p class="hint">Resumen elaborado a partir de las obras listadas al pie; verifica las citas y páginas en las ediciones originales y en el reglamento vigente.</p>
+</details>
+<details><summary>Glosario ampliado</summary>
+<p><b>Variable:</b> propiedad del fenómeno que puede observarse y medirse. <b>Dimensión:</b> componente o faceta de la variable. <b>Indicador:</b> manifestación observable de una dimensión, medida con un instrumento. <b>Población:</b> conjunto de unidades que se estudian. <b>Delimitación espacial, temporal y conceptual:</b> dónde, cuándo y sobre qué conceptos se hace el estudio. <b>Matriz de consistencia:</b> cuadro que alinea problema, objetivos e hipótesis para verificar su correspondencia. <b>Operacionalización:</b> paso de la definición conceptual a indicadores medibles.</p>
+</details>
+<details><summary>Lista de verificación de coherencia</summary>
+<ul><li>La pregunta, el objetivo y la hipótesis de cada fila tratan exactamente las mismas variables y dimensiones.</li><li>El título menciona todas las variables de la matriz.</li><li>Cada objetivo específico contiene un solo logro y empieza con verbo en infinitivo.</li><li>La delimitación (población, lugar y año) aparece en la pregunta general, el objetivo general y la hipótesis general.</li><li>El alcance elegido es coherente con las hipótesis: sin hipótesis relacionales en un estudio puramente descriptivo.</li><li>No usas verbos que prometen intervención (mejorar, implementar, reducir) en un estudio no experimental.</li></ul>
+</details>
+<footer id="cred"></footer>
+<div id="toast" role="status"></div>
+</div>
+
+<script>
+(function(){
+const $=s=>document.querySelector('#mc '+s),V=i=>$('#'+i).value.trim();
+const esc=s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const cap=s=>s.charAt(0).toUpperCase()+s.slice(1);
+const lst=a=>a.length<2?a[0]:a.slice(0,-1).join(', ')+' y '+a[a.length-1];
+
+const norm=s=>String(s).normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase().replace(/[^a-z0-9ñ ]/g,' ').replace(/\s+/g,' ').trim();
+const EL=/^(banco|colegio|hospital|instituto|centro|ministerio|gobierno|distrito|sector|mercado|club|consorcio|grupo|fondo|servicio|proyecto|programa|sistema|complejo|comite|consejo|ejercito|sindicato|poder|hotel|restaurante|supermercado|gremio|municipio|ayuntamiento|directorio|taller|laboratorio|establecimiento|poder)$/;
+const LA=/^(red|cruz|luz|paz|clinica|camara|caja|facultad|universidad|empresa|asociacion|cooperativa|compania|sociedad|municipalidad|institucion|corporacion|direccion|gerencia|oficina|agencia|escuela|junta|comunidad|federacion|superintendencia|fundacion|organizacion|ong)$/;
+const de=a=>a==='el'?'del':a?'de '+a:'de';
+/* Devuelve {a: artículo, n: nombre sin artículo inicial}. m = 'a' (automático), 'el','la','los','las' o '' */
+function inst(o,m){o=(o||'').trim();if(!o)return{a:'',n:''};
+ const p=o.split(/\s+/),f=p[0],w=norm(f);
+ if(/^(el|la|los|las)$/.test(w)&&p.length>1)return{a:w,n:pc(p.slice(1).join(' '))};
+ if(m&&m!=='a')return{a:m==='-'?'':m,n:pc(o)};
+ if(f.length>1&&f===f.toUpperCase()&&/[A-ZÁÉÍÓÚÑ]/.test(f))return{a:'',n:pc(o)}; /* siglas: sin artículo */
+ const pl=w.length>3&&/s$/.test(w)&&!/(is|us)$/.test(w),s=[w,w.slice(0,-1),w.slice(0,-2)];
+ const g=s.some(x=>EL.test(x))?'m':s.some(x=>LA.test(x))?'f':/(a|as|ion|iones|dad|dades|tad|umbre|itis|ez)$/.test(w)?'f':'m';
+ return{a:pl?(g==='m'?'los':'las'):(g==='m'?'el':'la'),n:pc(o)}}
+/* Mayúscula inicial en nombres propios escritos todo en minúsculas */
+const pc=s=>s!==s.toLowerCase()?s:s.split(' ').map((w,i)=>i&&/^(de|del|la|las|los|el|y|e|en)$/.test(w)?w:w.charAt(0).toUpperCase()+w.slice(1)).join(' ');
+/* Omite del lugar toda palabra o frase ya presente en institución, población o empresa; admite separar con coma o con espacio */
+function lugar(luVal,ctxt){const base=' '+norm(ctxt)+' ',seen=[],out=[],LEAD=/^(provincia|distrito|departamento|region|ciudad|localidad|provincial|distrital|regional)$/,STOP=/^(de|del|la|las|los|el|y)$/;
+ const has=a=>base.includes(' '+a.map(t=>t[1]).join(' ')+' ');
+ luVal.split(/[,;\/]/).forEach(p=>{let t=p.trim().split(/\s+/).map(x=>[x,norm(x)]).filter(x=>x[1]);
+  while(t.length>1&&LEAD.test(t[0][1]))t.shift();
+  if(t.length&&!has(t)){
+   for(let k=t.length-1;k>=1;k--)if(has(t.slice(0,k))&&t.slice(0,k).some(x=>x[1].length>2)){t=t.slice(k);break}
+   for(let k=t.length-1;k>=1;k--)if(has(t.slice(-k))&&t.slice(-k).some(x=>x[1].length>2)){t=t.slice(0,-k);break}}
+  while(t.length&&STOP.test(t[0][1]))t.shift();while(t.length&&STOP.test(t[t.length-1][1]))t.pop();
+  if(!t.length||has(t))return;const n=t.map(x=>x[1]).join(' ');if(seen.includes(n))return;seen.push(n);out.push(pc(t.map(x=>x[0]).join(' ')))});
+ return out}
+/* Contracciones, espacios y puntuación */
+const fix=t=>t.replace(/(?<![\wáéíóúñÁÉÍÓÚÑ])de el(?![\wáéíóúñÁÉÍÓÚÑ])/g,'del').replace(/(?<![\wáéíóúñÁÉÍÓÚÑ])a el(?![\wáéíóúñÁÉÍÓÚÑ])/g,'al').replace(/\s+/g,' ').replace(/\s+([,.;:?])/g,'$1').replace(/,(\s*,)+/g,',').replace(/([,;:])(?=[^\s\d])/g,'$1 ').trim();
+
+/* ====== EDITA AQUÍ: referencias y créditos ====== */
+const REFS=[
+'Hernández-Sampieri, R. y Mendoza, C. P. (2018). Metodología de la investigación: las rutas cuantitativa, cualitativa y mixta. McGraw-Hill.',
+'Vara-Horna, A. A. (2012). Desde la idea hasta la sustentación: siete pasos para una tesis exitosa. Un método efectivo para las ciencias empresariales. Instituto de Investigación de la Facultad de Ciencias Administrativas y Recursos Humanos, Universidad de San Martín de Porres.',
+'Vara, C. y Villanueva, L. (2020). Guía metodológica de investigación. Universidad Nacional Santiago Antúnez de Mayolo.'];
+const COMPL=['Ñaupas, H., Valdivia, M. R., Palacios, J. J. y Romero, H. E. (2018). Metodología de la investigación cuantitativa-cualitativa y redacción de la tesis (5.ª ed.). Ediciones de la U.',
+'Carrasco, S. (2019). Metodología de la investigación científica: pautas metodológicas para diseñar y elaborar el proyecto de investigación. Editorial San Marcos.',
+'Bernal, C. A. (2016). Metodología de la investigación: administración, economía, humanidades y ciencias sociales (4.ª ed.). Pearson.',
+'Supo, J. y Zacarías, H. (2020). Metodología de la investigación científica (3.ª ed.). Bioestadístico EIRL.',
+'Arias, F. G. (2012). El proyecto de investigación: introducción a la metodología científica (6.ª ed.). Episteme.'];
+const CREDITS='[Completar: nombre formal de quien elabora la herramienta] · Escuela de Administración, Universidad Nacional Santiago Antúnez de Mayolo (UNASAM).';
+/* ================================================ */
+
+const NOTES={
+hs:'Hernández-Sampieri y Mendoza (2018): la hipótesis es una explicación tentativa del fenómeno y guía el estudio. Se formula según el alcance: en el descriptivo solo cuando se pronostica una cifra o un hecho; en el correlacional se formulan hipótesis correlacionales (relación entre dos o más variables) y en el explicativo, causales, bivariadas (una independiente y una dependiente) o multivariadas (más de una independiente). «Medir» es una acción de recolección de datos, no un objetivo de investigación.',
+vara:'Vara-Horna (2012): método pensado para tesis de ciencias empresariales (administración, marketing, negocios). Los objetivos específicos se desglosan por factor o dimensión (método estructural) y pueden ir precedidos de objetivos descriptivos (método secuencial). Conviene delimitar el estudio en lo espacial, temporal y conceptual, y mantener la correspondencia entre pregunta, objetivo e hipótesis.',
+vi:'Vara y Villanueva (guía UNASAM): a cada problema le corresponde un objetivo y una hipótesis, en el mismo orden. Los objetivos van en infinitivo y deben ser medibles; evita verbos como mejorar, implementar o reducir, que prometen resultados que la investigación no controla.'};
+const Q={
+hs:L=>`¿Qué relación existe entre ${L}`,
+vara:L=>`¿Cuál es la relación entre ${L}`,
+vi:L=>`¿De qué manera se relacionan ${L}`};
+
+let VARS=[{n:'',d:['','']},{n:'',d:['','']}],ROWS=[],TITLE='';
+
+function toast(t){const e=$('#toast');e.textContent=t;e.classList.add('on');clearTimeout(toast.t);toast.t=setTimeout(()=>e.classList.remove('on'),1800)}
+function ro(){const c=$('#cr'),o=c.value;c.innerHTML='<option value="-1">Todas las variables</option>'+VARS.map((v,i)=>`<option value="${i}">Solo ${esc(v.n||'Variable '+(i+1))}</option>`).join('');if(c.querySelector(`[value="${o}"]`))c.value=o}
+function rv(){$('#vs').innerHTML=VARS.map((v,i)=>`<fieldset><legend>Variable ${i+1}</legend><input data-v="${i}" value="${esc(v.n)}" placeholder="Nombre de la variable" aria-label="Variable ${i+1}">${v.d.map((d,j)=>`<div class="dr"><input data-v="${i}" data-d="${j}" value="${esc(d)}" placeholder="Dimensión ${j+1}" aria-label="Dimensión ${j+1} de la variable ${i+1}"><button type="button" data-rd="${i}.${j}" aria-label="Quitar dimensión">×</button></div>`).join('')}<button type="button" class="s" data-ad="${i}">+ Dimensión</button>${VARS.length>2?`<button type="button" class="s" data-rv="${i}">Quitar variable</button>`:''}</fieldset>`).join('');$('#addv').style.display=VARS.length>=5?'none':'';ro()}
+
+document.addEventListener('input',e=>{const t=e.target;if(!t.closest('#mc'))return;
+ if(t.dataset.v!==undefined){const v=VARS[t.dataset.v];if(t.dataset.d!==undefined)v.d[t.dataset.d]=t.value;else{v.n=t.value;ro()}}
+ if(t.classList.contains('txt'))ROWS[t.dataset.r][t.dataset.k]=t.innerText});
+document.addEventListener('click',e=>{const t=e.target.closest('#mc button');if(!t)return;const d=t.dataset;
+ if(d.ad!==undefined){VARS[d.ad].d.push('');rv()}
+ else if(d.rd){const[i,j]=d.rd.split('.');VARS[i].d.splice(j,1);rv()}
+ else if(d.rv!==undefined){VARS.splice(d.rv,1);rv()}
+ else if(d.c)copy(ROWS[d.r][d.c])});
+$('#addv').onclick=()=>{if(VARS.length<5){VARS.push({n:'',d:['','']});rv()}};
+$('#au').onchange=()=>{$('#an').textContent=NOTES[V('au')];$('#ds').checked=V('au')==='vara'&&V('al')==='c'};
+$('#al').onchange=()=>{$('#ds').disabled=V('al')==='d';if(V('al')==='d')$('#ds').checked=false};
+
+$('#demo').onclick=()=>{
+ $('#au').value='hs';$('#an').textContent=NOTES.hs;
+ $('#al').value='c';$('#ds').disabled=false;$('#ds').checked=false;
+ $('#hp').value='b';$('#vb').value='Determinar';
+ $('#ti').value='Relación entre liderazgo transformacional y desempeño laboral en los trabajadores administrativos de la Municipalidad Provincial de Huaraz, 2026';
+ $('#og').value='Municipalidad Provincial de Huaraz';
+ $('#em').value='';$('#ar').value='a';
+ $('#po').value='los trabajadores administrativos';
+ $('#lu').value='Huaraz';$('#an2').value='2026';
+ VARS=[
+   {n:'liderazgo transformacional',d:['influencia idealizada','motivación inspiracional','estimulación intelectual']},
+   {n:'desempeño laboral',d:['productividad','calidad de trabajo','trabajo en equipo']}
+ ];
+ rv();$('#cr').value='0';
+ $('#go').click();
+};
+
+$('#clr').onclick=()=>{
+ ['ti','og','em','po','lu','an2'].forEach(id=>$('#'+id).value='');
+ $('#ar').value='a';$('#warn').innerHTML='';
+ VARS=[{n:'',d:['','']},{n:'',d:['','']}];ROWS=[];
+ rv();$('#go').textContent='Generar matriz';
+ $('#out').innerHTML='<div class="empty">Completa las variables y sus dimensiones, y pulsa «Generar matriz».</div>';
+};
+
+function copy(t){(navigator.clipboard?navigator.clipboard.writeText(t):Promise.reject()).then(()=>toast('Copiado')).catch(()=>{const a=document.createElement('textarea');a.value=t;document.body.append(a);a.select();try{document.execCommand('copy');toast('Copiado')}catch(_){toast('No se pudo copiar')}a.remove()})}
+function ctx(){const po=V('po'),og=V('og'),em=V('em'),lu=lugar(V('lu'),[po,og,em].join(' '));
+ const O=[inst(og,V('ar')),inst(em,'a')].filter(I=>I.n);let s='';
+ if(po)s=' en '+po+(O.length?' '+O.map(I=>de(I.a)+' '+I.n).join(' y '):'');
+ else if(O.length)s=' en '+O.map(I=>(I.a?I.a+' ':'')+I.n).join(' y ');
+ const r=[...lu];if(V('an2'))r.push(V('an2'));
+ if(r.length)s+=(s?', ':' en ')+r.join(', ');
+ return s}
+const names=()=>VARS.map((v,i)=>v.n.trim()||'Variable '+(i+1));
+const dims=i=>[...new Set(VARS[i].d.map(s=>s.trim()).filter(Boolean))];
+const used=()=>{const c=+V('cr');return c<0?VARS.map((_,i)=>i):[c]};
+
+function check(){const w=[],N=VARS.map(v=>norm(v.n)),L=norm;
+ if(N.some(n=>!n))w.push(['e','Ingresa el nombre de todas las variables.']);
+ if(new Set(N.filter(Boolean)).size<N.filter(Boolean).length)w.push(['e','Hay variables con el mismo nombre.']);
+ if(V('al')==='c')used().forEach(i=>{if(!dims(i).length)w.push(['e',`Ingresa al menos una dimensión de «${names()[i]}»: con ellas se formulan los específicos.`])});
+ else used().forEach(i=>{if(!dims(i).length)w.push(['w',`«${names()[i]}» no tiene dimensiones: no tendrá objetivos específicos.`])});
+ const all=[];
+ VARS.forEach((v,i)=>{const a=v.d.map(s=>L(s)).filter(Boolean);if(new Set(a).size<a.length)w.push(['w',`Hay dimensiones repetidas en «${names()[i]}»; se usarán una sola vez.`]);
+  [...new Set(a)].forEach(d=>{if(d===N[i])w.push(['w',`La dimensión «${d}» es igual a su variable: define dimensiones más específicas.`]);
+   if(all.includes(d))w.push(['w',`La dimensión «${d}» se repite en otra variable: revisa que cada dimensión pertenezca a una sola variable.`]);all.push(d)})});
+ const t=L(V('ti'));if(t&&N.every(Boolean)&&!N.every(n=>t.includes(n)))w.push(['w','El título no menciona todas las variables; revisa su coherencia con la matriz.']);
+ ['po','lu','an2'].forEach((id,i)=>{if(!V(id))w.push(['w',`Falta ${['la población','el lugar','el año'][i]}: la pregunta, el objetivo y la hipótesis quedarán sin esa delimitación.`])});
+ if(V('an2')&&!/^\d{4}(\s*-\s*\d{4})?$/.test(V('an2')))w.push(['w','El año o periodo no tiene el formato esperado (2026 o 2025-2026).']);
+ if(V('lu')&&!lugar(V('lu'),[V('po'),V('og'),V('em')].join(' ')).length)w.push(['w','El lugar ya figura en la población u organización; se omitió para no repetirlo.']);
+ if(VARS.length>2&&V('al')==='c')w.push(['w','Estudio multivariado: consulta con tu asesor la técnica estadística adecuada (por ejemplo, correlación múltiple o regresión).']);
+ return w}
+
+function build(){const au=V('au'),cor=V('al')==='c',vb=V('vb'),hp=V('hp'),x=ctx(),n=names(),R=[],q=Q[au];let k=0;
+ const hy=L=>{const hi=`Existe relación estadísticamente significativa entre ${L}${x}.`,h0=`No existe relación estadísticamente significativa entre ${L}${x}.`;return hp==='i'?hi:hp==='n'?h0:`Hi: ${hi}\nH0: ${h0}`};
+ const NOH='No se formula hipótesis: el estudio es descriptivo y no contrasta relaciones entre variables.';
+ const desc=(a,tag)=>({tag,p:`¿Cuál es el nivel de ${a}${x}?`,o:`Describir el nivel de ${a}${x}.`,h:NOH});
+ const rel=(L,tag)=>({tag,p:cap(q(L))+x+'?',o:`${vb} la relación entre ${L}${x}.`,h:hy(L)});
+ const dl=(i,d)=>`la dimensión «${d}» de ${n[i]}`;
+ const mix=(i,d)=>{const o=n.filter((_,j)=>j!==i);return `${dl(i,d)} y ${o.length>1?'las variables':'la variable'} ${lst(o)}`};
+ if(cor){R.push(rel(lst(n),'General'));
+  if($('#ds').checked)n.forEach(v=>R.push(desc(v,'Descriptivo')));
+  used().forEach(i=>dims(i).forEach(d=>R.push(rel(mix(i,d),'Específico '+(++k)))))}
+ else{R.push(desc(lst(n),'General'));
+  used().forEach(i=>dims(i).forEach(d=>R.push(desc(dl(i,d),'Específico '+(++k)))))}
+ return R.map(r=>({tag:r.tag,p:fix(r.p),o:fix(r.o),h:r.h.split('\n').map(fix).join('\n')}))}
+
+$('#go').onclick=()=>{const w=check();$('#warn').innerHTML=w.map(([c,t])=>`<div class="${c}">${esc(t)}</div>`).join('');if(w.some(x=>x[0]==='e'))return;
+ ROWS=build();TITLE=V('ti');draw();$('#go').textContent='Volver a generar';$('#out').scrollIntoView({behavior:'smooth',block:'start'})};
+
+function draw(){const cell=(r,k)=>`<td><div class="tag">${k==='p'?esc(ROWS[r].tag):''}</div><div class="txt" contenteditable="true" data-r="${r}" data-k="${k}">${esc(ROWS[r][k])}</div><button type="button" class="s" data-r="${r}" data-c="${k}">Copiar</button></td>`;
+ const alcanceTxt=V('al')==='c'?'Correlacional':'Descriptivo';
+ const disenoTxt=VARS.length>2?`Multivariado (${VARS.length} variables)`:'Bivariado (2 variables)';
+ $('#out').innerHTML=`<div class="bar"><span class="badge">${alcanceTxt} · ${disenoTxt}</span><div class="bar-btns"><button type="button" class="p" id="ca">Copiar toda la matriz</button><button type="button" id="dw">Descargar Word</button><button type="button" id="pr">Imprimir / PDF</button></div></div>
+ <div class="tw"><table><thead><tr><th>Preguntas</th><th>Objetivos</th><th>Hipótesis</th></tr></thead><tbody>${ROWS.map((r,i)=>`<tr${i===0?' class="gen"':''}>${cell(i,'p')}${cell(i,'o')}${cell(i,'h')}</tr>`).join('')}</tbody></table></div>
+ <p class="note">Haz clic en cualquier celda para editarla. Si cambias variables o dimensiones, pulsa «Volver a generar»: las ediciones manuales se reemplazan. Revisa la redacción final con tu asesor.</p>`;
+ $('#ca').onclick=copyAll;$('#dw').onclick=dlDoc;$('#pr').onclick=()=>window.print()}
+function tbl(){return '<table border="1" cellpadding="6" style="border-collapse:collapse"><tr><th>Preguntas</th><th>Objetivos</th><th>Hipótesis</th></tr>'+ROWS.map(r=>'<tr>'+[r.p,r.o,r.h].map(s=>'<td valign="top">'+esc(s).replace(/\n/g,'<br>')+'</td>').join('')+'</tr>').join('')+'</table>'}
+function copyAll(){const t='Preguntas\tObjetivos\tHipótesis\n'+ROWS.map(r=>[r.p,r.o,r.h].map(s=>s.replace(/\n/g,' ')).join('\t')).join('\n');
+ try{navigator.clipboard.write([new ClipboardItem({'text/html':new Blob([tbl()],{type:'text/html'}),'text/plain':new Blob([t],{type:'text/plain'})})]).then(()=>toast('Matriz copiada'),()=>copy(t))}catch(_){copy(t)}}
+function dlDoc(){const h=`<html xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:w="urn:schemas-microsoft-com:office:word"><head><meta charset="utf-8"><title>Matriz de consistencia</title><style>@page{size:landscape;margin:2cm}body{font-family:Arial;font-size:10pt}table{border-collapse:collapse;width:100%}td,th{border:1px solid #000;padding:6px;vertical-align:top}</style></head><body><h2>Matriz de consistencia</h2><p>${esc(TITLE)}</p>${tbl()}<p><small>${esc(CREDITS)}</small></p></body></html>`;
+ const a=document.createElement('a'),u=URL.createObjectURL(new Blob(['\ufeff',h],{type:'application/msword'}));a.href=u;a.download='matriz-de-consistencia.doc';document.body.append(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(u),2000)}
+
+$('#cred').innerHTML='<strong>Referencias metodológicas</strong><ul>'+REFS.map(r=>'<li>'+esc(r)+'</li>').join('')+'</ul><strong>Lecturas complementarias</strong><ul>'+COMPL.map(r=>'<li>'+esc(r)+'</li>').join('')+'</ul><strong>Créditos:</strong> '+esc(CREDITS);
+$('#an').textContent=NOTES.hs;rv();
+})();
+</script>
+</body>
+</html>
